@@ -16,5 +16,10 @@ def predict(args_dict):
     logging.info(f'args_dict: {args_dict}')
     arg = args_dict.get('arg1')
     # predictor(arg)
-    return {'arg': arg}
+    return {'arg1': arg}
 
+#
+# Test
+#
+# curl -X POST -H "Content-Type: application/json" --data '{"arg1": "hello world"}' http://<hostname>/predictions
+#
