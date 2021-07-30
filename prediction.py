@@ -2,6 +2,7 @@
 
 # Import libraries
 # import tensorflow as tf
+import logging
 
 # Load your model.
 # model_dir = 'models/myfancymodel'
@@ -11,6 +12,7 @@
 
 # Write a predict function 
 def predict(args_dict):
+    logging.info(f'args_dict: {args_dict}')
     arg = args_dict.get('arg1')
     # predictor(arg)
     return {'arg': arg}
