@@ -4,6 +4,7 @@
 # import tensorflow as tf
 import logging
 
+logging.basicConfig(level=logging.INFO)
 # Load your model.
 # model_dir = 'models/myfancymodel'
 # saved_model = tf.saved_model.load(model_dir)
